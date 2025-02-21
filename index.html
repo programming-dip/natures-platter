@@ -27,12 +27,16 @@
     </style>
     <title>Natures platter</title>
 </head>
-<body class="font-sora">
+<body class="font-sora bg-base">
     <!-- Header -->
-    <header class="container mx-auto">
-        <!-- nav bar --> 
+    <header class="relative">
+        <!-- Fullscreen linear gradient background -->
+        <div class="inset-0 w-full min-h-full bg-gradient-to-t from-[#EFEBE3] to-base -z-10">
+            <!-- Container for header content -->
+             <div class="container mx-auto">
+                <!-- nav bar --> 
          <nav class="font-normal text-xl border border-t-0 border-l-0 border-r-0 border-b-1 border-b-green-400 md:border-0 mx-auto">
-            <div class="navbar bg-base-100">
+            <div class="navbar">
                 <div class="navbar-start sm:flex w-full justify-between">
                     <img src="assets/logo-header.png" class="w-28 md:w-[100%] lg:max-w-[154px]">
                   <div class="dropdown">
@@ -75,9 +79,74 @@
                 </div>
               </div>
          </nav>
+
+         <!-- Hero Section -->
+         <section class="container">
+            <!-- Texts -->
+            <div class="text-center mt-28 max-w-3xl mx-auto space-y-6">
+                <h2 class="text-6xl font-semibold">Freshness <span class="text-green-600">You Can Count</span> On, Prices You’ll Love!</h2>
+                <p class="text-[#111111] text-xl">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
+            </div>
+            <!-- Image -->
+            <div>
+                <img src="assets/hero-vegetables.png" alt="Vegies in a bag " class="mx-auto w-full max-w-5xl">
+            </div>
+         </section> 
+             </div>
+        </div>
     </header>
     <!-- Main -->
-     <main></main>
+     <main class="container mx-auto">
+        <!-- Services Section -->
+         <section class="mt-24 space-y-10 mb-24">
+            <!-- Title -->
+             <h2 class="text-green-600 text-4xl font-semibold">Services</h2>
+             <!-- Cards -->
+              <div class="flex flex-col md:flex-row justify-between gap-9 w-full">
+                <!-- Card-1 -->
+                <div class="card bg-[#EFEBE3] flex-1">
+                    <figure class=" bg-white rounded-full w-36 h-36 mx-auto mt-9 flex items-center justify-center">
+                      <img
+                        src="assets/service.png"
+                        alt="Service Logo"
+                        class="w-20 h-20" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">24/7 Services </h2>
+                      <p>Our customer support and delivery services are available 24/7 to ensure you always get what you need, when you need it.</p>
+                    </div>
+                  </div>
+
+                  <!-- Card -2 -->
+                  <div class="card bg-[#EFEBE3] flex-1">
+                    <figure class=" bg-white rounded-full w-36 h-36 mx-auto mt-9 flex items-center justify-center">
+                      <img
+                        src="assets/delivery.png"
+                        alt="Service Logo"
+                        class="w-20 h-20" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Fast Delivery </h2>
+                      <p>We guarantee quick and hassle-free delivery, bringing fresh and quality products straight to your doorstep in no time.</p>
+                    </div>
+                  </div>
+
+                  <!-- Card-3 -->
+                  <div class="card bg-[#EFEBE3] flex-1">
+                    <figure class=" bg-white rounded-full w-36 h-36 mx-auto mt-9 flex items-center justify-center">
+                      <img
+                        src="assets/healthy.png"
+                        alt="Service Logo"
+                        class="w-20 h-20" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Healthy Products</h2>
+                      <p>We prioritize fresh, organic, and high-quality products to help you maintain a healthy and balanced lifestyle.</p>
+                    </div>
+                  </div> 
+              </div>
+         </section>
+     </main>
     <!-- Footer -->
      <footer></footer>
 </body>
