@@ -12,18 +12,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
     <!-- Font awesome CDN -->
     <script src="https://kit.fontawesome.com/a3ac030042.js" crossorigin="anonymous"></script>
-    <!-- Custom Class Tailwind-->
-    <style type="text/tailwindcss">
-        @theme {
-            --font-sora: "Sora", serif;
-            --color-bg-primary: #B68C5A;
-        }
-    </style>
+  
+    
     
     <style>
         .font-sora {
             font-family: "Sora", serif;
         }
+        @keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+    
     </style>
     <title>Natures platter</title>
 </head>
@@ -89,7 +95,7 @@
             </div>
             <!-- Image -->
             <div>
-                <img src="assets/hero-vegetables.png" alt="Vegies in a bag " class="mx-auto w-full max-w-5xl">
+                <img src="assets/hero-vegetables.png" alt="Vegies in a bag " class="mx-auto w-full max-w-5xl animate-[fade-in_1s_ease-in]">
             </div>
          </section> 
              </div>
